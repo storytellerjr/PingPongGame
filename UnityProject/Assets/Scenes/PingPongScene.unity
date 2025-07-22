@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1
+GameObject:
+  m_ObjectHideFlags: 0
+  m_Name: GameManager
+  m_Component:
+  - component: {fileID: 2}
+  - component: {fileID: 3}
+--- !u!4 &2
+Transform:
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+--- !u!114 &3
+MonoBehaviour:
+  m_Script: {fileID: 11500000, guid: <GUID_OF_PingPongGame.cs>, type: 3}
+  playerPaddle: {fileID: 4}
+  remotePaddle: {fileID: 6}
+  ball: {fileID: 8}
+--- !u!1 &4
+GameObject:
+  m_Name: PlayerPaddle
+  m_Component:
+  - component: {fileID: 5}
+--- !u!4 &5
+Transform:
+  m_LocalPosition: {x: -5, y: 1, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalScale: {x: 0.5, y: 1, z: 0.2}
+--- !u!1 &6
+GameObject:
+  m_Name: RemotePaddle
+  m_Component:
+  - component: {fileID: 7}
+--- !u!4 &7
+Transform:
+  m_LocalPosition: {x: 5, y: 1, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalScale: {x: 0.5, y: 1, z: 0.2}
+--- !u!1 &8
+GameObject:
+  m_Name: Ball
+  m_Component:
+  - component: {fileID: 9}
+--- !u!4 &9
+Transform:
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+--- !u!1 &10
+GameObject:
+  m_Name: Main Camera
+  m_Component:
+  - component: {fileID: 11}
+  - component: {fileID: 12}
+--- !u!4 &11
+Transform:
+  m_LocalPosition: {x: 0, y: 5, z: -10}
+  m_LocalRotation: {x: 0.258819, y: 0, z: 0, w: 0.9659258}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+--- !u!20 &12
+Camera:
+  m_ClearFlags: 1
+  m_FieldOfView: 60
+--- !u!1 &13
+GameObject:
+  m_Name: Floor
+  m_Component:
+  - component: {fileID: 14}
+--- !u!4 &14
+Transform:
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalScale: {x: 2, y: 1, z: 1}
+--- !u!1 &15
+GameObject:
+  m_Name: TopWall
+  m_Component:
+  - component: {fileID: 16}
+--- !u!4 &16
+Transform:
+  m_LocalPosition: {x: 0, y: 5, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalScale: {x: 12, y: 0.1, z: 2}
+--- !u!1 &17
+GameObject:
+  m_Name: BottomWall
+  m_Component:
+  - component: {fileID: 18}
+--- !u!4 &18
+Transform:
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalScale: {x: 12, y: 0.1, z: 2}
+--- !u!1 &19
+GameObject:
+  m_Name: LeftWall
+  m_Component:
+  - component: {fileID: 20}
+--- !u!4 &20
+Transform:
+  m_LocalPosition: {x: -6, y: 2.5, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalScale: {x: 0.1, y: 5, z: 2}
+--- !u!1 &21
+GameObject:
+  m_Name: RightWall
+  m_Component:
+  - component: {fileID: 22}
+--- !u!4 &22
+Transform:
+  m_LocalPosition: {x: 6, y: 2.5, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalScale: {x: 0.1, y: 5, z: 2}
+  

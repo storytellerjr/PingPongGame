@@ -1,0 +1,12 @@
+{
+  "name": "ping-pong-sidecar",
+  "version": "1.0.0",
+  "main": "sidecar.js",
+  "dependencies": {
+    "@hyperswarm/rpc": "^3.3.1"
+  },
+  "scripts": {
+    "start": "node sidecar.js",
+    "build": "pkg sidecar.js --targets node16-win-x64,node16-macos-x64,node16-linux-x64 --output P2PSidecar"
+  }
+}
